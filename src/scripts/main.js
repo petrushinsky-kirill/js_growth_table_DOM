@@ -31,7 +31,7 @@ addRow.addEventListener('click', () => {
 
 deleteRow.addEventListener('click', () => {
   if (field.children.length > 0) {
-    field.firstElementChild.remove();
+    field.lastElementChild.remove();
     checkLength();
   }
 });
